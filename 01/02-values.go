@@ -15,4 +15,13 @@ func main() {
 	fmt.Println("division of 7 and 4 is ", 7.0/4.0)
 	fmt.Println("Remainder from 7/4 is ", 7%4)
 
+	// Boolean Operations
+	fmt.Println("true && false is ", true && false)
+	fmt.Println("true && true ", true && true)
+	fmt.Println("false && false ", false && false)
+
+	fmt.Println("true || false ", true || false)
+	fmt.Println("true || true ", true || true)
+	fmt.Println("false || false ", false || false)
+
 }
