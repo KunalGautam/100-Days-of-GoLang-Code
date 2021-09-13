@@ -11,6 +11,6 @@ func main() {
 	var c float64 = 9.0
 	var d bool = true
 
-	fmt.Println(a,b,c,d)
+	fmt.Println(a, b, c, d)
 
 }
