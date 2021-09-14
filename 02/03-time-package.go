@@ -34,4 +34,10 @@ func main() {
 	time.Sleep(2000 * time.Millisecond)
 	fmt.Println("I'm awake now!")
 
+	// Step 6: Time taken
+	t0 := time.Now()
+	time.Sleep(2000 * time.Millisecond)
+	t1 := time.Now()
+	fmt.Printf("The sleep took approx %v to run.\n", t1.Sub(t0))
+
 }
