@@ -27,4 +27,21 @@ func main() {
 		b++
 	}
 
+	// Print even,odd upto 20
+	c := 0
+	for {
+		if c%2 == 0 {
+			fmt.Println("Even-> ", c)
+			c++
+			// continue skips any further loop code and continues next iteration
+			continue
+		}
+		fmt.Println("Odd-> ", c)
+		c++
+
+		if c > 20 {
+			break
+		}
+	}
+
 }
