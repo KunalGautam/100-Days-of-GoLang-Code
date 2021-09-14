@@ -29,4 +29,9 @@ func main() {
 	// Step 4: Sleep in seconds
 	time.Sleep(2 * time.Second)
 	fmt.Println("I'm awake now!")
+
+	// Step 5: Sleep in milliseconds
+	time.Sleep(2000 * time.Millisecond)
+	fmt.Println("I'm awake now!")
+
 }
