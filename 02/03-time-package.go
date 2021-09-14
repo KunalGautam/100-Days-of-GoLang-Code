@@ -25,4 +25,8 @@ func main() {
 	} else {
 		fmt.Println(time.Now().In(loc))
 	}
+
+	// Step 4: Sleep in seconds
+	time.Sleep(2 * time.Second)
+	fmt.Println("I'm awake now!")
 }
