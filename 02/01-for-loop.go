@@ -19,4 +19,12 @@ func main() {
 	for a := 0; a <= 10; a++ {
 		fmt.Println("a-> ", a)
 	}
+
+	// Method 3
+	b := 0
+	for b <= 10 {
+		fmt.Println("b-> ", b)
+		b++
+	}
+
 }
