@@ -17,4 +17,12 @@ func main() {
 	fmt.Println(time.Now().Hour())
 	fmt.Println(time.Now().Minute())
 	fmt.Println(time.Now().Second())
+
+	//Step 3: Timezone
+	loc, err := time.LoadLocation("Asia/Thimphu")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(time.Now().In(loc))
+	}
 }
