@@ -14,4 +14,9 @@ func main() {
 		}
 		i++
 	}
+
+	// Method 2
+	for a := 0; a <= 10; a++ {
+		fmt.Println("a-> ", a)
+	}
 }
