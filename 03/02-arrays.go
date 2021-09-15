@@ -31,5 +31,13 @@ func main() {
 	for i, v := range c { //range returns both the index and value
 		fmt.Printf("%d element of c is %d\n", i, v)
 	}
+	// Step 8: Two dimensional array and assiging value using loop
+	var twoD [2][3]int
+	for i := 0; i < 2; i++ {
+		for j := 0; j < 3; j++ {
+			twoD[i][j] = i + j
+		}
+	}
+	fmt.Println("2d: ", twoD)
 
 }
