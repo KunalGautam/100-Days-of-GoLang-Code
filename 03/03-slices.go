@@ -20,4 +20,12 @@ func main() {
 	b := make([]int, len(a))
 	copy(b, a)
 	fmt.Println(b)
+
+	// Step 5: Seek slice data
+	// Start from index 0 till 2
+	fmt.Println(a[:2])
+	//start from index 2 till 4
+	fmt.Println(a[2:4])
+	//start from index 2 till end
+	fmt.Println(a[2:])
 }
