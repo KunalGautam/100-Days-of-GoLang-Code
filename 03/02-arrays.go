@@ -18,4 +18,11 @@ func main() {
 	b := [4]int{1011, 18641, 5432, 353} // short hand declaration to create array
 	fmt.Println(b)
 	fmt.Println(b[3])
+
+	// Step 4: Declare on fly
+	c := [...]int{1, 4, 2, 5, 7, 8, 3}
+	fmt.Println(c)
+
+	// Step 5: Length of array
+	fmt.Println(len(c))
 }
