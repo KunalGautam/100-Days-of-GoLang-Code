@@ -12,4 +12,13 @@ func main() {
 		fmt.Println("Number is Odd")
 	}
 
+	// Step 2: Set default
+	switch a % 5 {
+	case 0:
+		fmt.Println("Number is divisible by 5")
+	default:
+		fmt.Println("Number is not divisible by 5")
+
+	}
+
 }
