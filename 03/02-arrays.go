@@ -9,4 +9,9 @@ func main() {
 	var a [3]int
 	fmt.Println(a)
 
+	// Step 2: Assigning values
+	a[0] = 101
+	fmt.Println(a)
+	fmt.Println(a[0])
+
 }
