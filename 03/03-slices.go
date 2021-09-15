@@ -13,4 +13,7 @@ func main() {
 	a[2] = 6
 	a[3] = 8
 	fmt.Println(a)
+	// Step 3: Append slice, which is not possible with arrays
+	a = append(a, 10)
+	fmt.Println(a)
 }
