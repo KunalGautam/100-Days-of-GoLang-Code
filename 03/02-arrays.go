@@ -25,4 +25,7 @@ func main() {
 
 	// Step 5: Length of array
 	fmt.Println(len(c))
+	// Step 6: print last element
+	fmt.Println(c[len(c)-1])
+
 }
