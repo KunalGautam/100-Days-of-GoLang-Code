@@ -28,4 +28,21 @@ func main() {
 	fmt.Println(a[2:4])
 	//start from index 2 till end
 	fmt.Println(a[2:])
+
+	//Step 6: short hand declaration, empty slice
+	c := []string{"a", "b", "c"}
+	d := []string{}
+	fmt.Println(c)
+	fmt.Println(d)
+
+	// Step 7: Two Dimentional Slice
+	twoD := make([][]int, 3)
+	for i := 0; i < 3; i++ {
+		innerLen := i + 1
+		twoD[i] = make([]int, innerLen)
+		for j := 0; j < innerLen; j++ {
+			twoD[i][j] = i + j
+		}
+	}
+	fmt.Println("2d: ", twoD)
 }
