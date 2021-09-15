@@ -16,4 +16,8 @@ func main() {
 	// Step 3: Append slice, which is not possible with arrays
 	a = append(a, 10)
 	fmt.Println(a)
+	// Step 4: Copy slice
+	b := make([]int, len(a))
+	copy(b, a)
+	fmt.Println(b)
 }
