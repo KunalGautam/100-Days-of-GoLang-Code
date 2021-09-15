@@ -45,4 +45,9 @@ func main() {
 		}
 	}
 	fmt.Println("2d: ", twoD)
+
+	// Step 8: retreive values by iteration
+	for i, v := range c { //range returns both the index and value
+		fmt.Printf("%d element of c is %s\n", i, v)
+	}
 }
