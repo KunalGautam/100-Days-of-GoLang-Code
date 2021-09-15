@@ -27,5 +27,9 @@ func main() {
 	fmt.Println(len(c))
 	// Step 6: print last element
 	fmt.Println(c[len(c)-1])
+	//Step 7: Iteration
+	for i, v := range c { //range returns both the index and value
+		fmt.Printf("%d element of c is %d\n", i, v)
+	}
 
 }
