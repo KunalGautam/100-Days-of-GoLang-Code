@@ -21,7 +21,7 @@ func main() {
 	fmt.Println(sumAll(nums...))
 }
 
-//sum accepts two int and return a int type
+//sum accepts two int and return an int type
 func sum(x int, y int) int {
 	return x + y
 }
