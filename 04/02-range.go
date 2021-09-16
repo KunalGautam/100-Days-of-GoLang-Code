@@ -11,4 +11,11 @@ func main() {
 	}
 	fmt.Println("sum:", sum)
 
+	//Step 2: Index Printing
+	for i, num := range nums {
+		if num == 4 {
+			fmt.Println("index of 4 is at:", i)
+		}
+	}
+
 }
