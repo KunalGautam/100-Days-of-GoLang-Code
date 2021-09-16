@@ -12,6 +12,9 @@ func main() {
 	// Step 3:assigning value to variable
 	a := sumAll(2, 9, 56, 11)
 	fmt.Println(a)
+
+	// Step 4: Return multiple value
+	fmt.Println(textAndSum("The sum is: ", 1, 2, 3, 4))
 }
 
 //sum accepts two int and return a int type
@@ -25,4 +28,12 @@ func sumAll(x ...int) int {
 		sum += num
 	}
 	return sum
+}
+
+func textAndSum(s string, i ...int) (string, int) {
+	sum := 0
+	for _, num := range i {
+		sum += num
+	}
+	return s, sum
 }
