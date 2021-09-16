@@ -15,6 +15,10 @@ func main() {
 
 	// Step 4: Return multiple value
 	fmt.Println(textAndSum("The sum is: ", 1, 2, 3, 4))
+
+	// Step 5: Variadic variable passing
+	nums := []int{1, 2, 3, 4}
+	fmt.Println(sumAll(nums...))
 }
 
 //sum accepts two int and return a int type
