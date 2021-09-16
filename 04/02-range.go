@@ -18,4 +18,9 @@ func main() {
 		}
 	}
 
+	//Step 3: Index and ascii value printing for string
+	for i, c := range "aabrakadabra হরে কৃষ্ণ হরে রাম" {
+		fmt.Println(i, c)
+	}
+
 }
