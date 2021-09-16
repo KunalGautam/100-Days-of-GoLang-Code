@@ -15,4 +15,8 @@ func main() {
 	// Step 3: Retreive a key
 	fmt.Println(a["age"])
 
+	// Step 4: Delete a key
+	delete(a, "age")
+	fmt.Println(a)
+
 }
