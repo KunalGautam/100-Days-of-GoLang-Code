@@ -28,4 +28,8 @@ func main() {
 	fmt.Println(keyVal1)
 	fmt.Println(ifPresent1)
 
+	// Step 6: shorthand declaration
+	b := map[string]int{"foo": 1, "bar": 2, "ex": 3, "why": 4}
+	fmt.Println(b)
+
 }
