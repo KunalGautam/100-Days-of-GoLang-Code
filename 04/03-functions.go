@@ -8,6 +8,10 @@ func main() {
 
 	//Step 2: Sum all
 	fmt.Println(sumAll(1, 2, 3, 4))
+
+	// Step 3:assigning value to variable
+	a := sumAll(2, 9, 56, 11)
+	fmt.Println(a)
 }
 
 //sum accepts two int and return a int type
