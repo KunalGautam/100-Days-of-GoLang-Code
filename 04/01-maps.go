@@ -12,4 +12,7 @@ func main() {
 	// Step 2: length of map
 	fmt.Println(len(a))
 
+	// Step 3: Retreive a key
+	fmt.Println(a["age"])
+
 }
