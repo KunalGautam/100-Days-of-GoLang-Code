@@ -32,4 +32,9 @@ func main() {
 	b := map[string]int{"foo": 1, "bar": 2, "ex": 3, "why": 4}
 	fmt.Println(b)
 
+	// Step 7: Iteration on map
+	for key, val := range b {
+		fmt.Printf("%s -> %d\n", key, val)
+	}
+
 }
