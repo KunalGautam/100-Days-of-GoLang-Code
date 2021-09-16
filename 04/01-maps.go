@@ -19,4 +19,13 @@ func main() {
 	delete(a, "age")
 	fmt.Println(a)
 
+	// Step 5: Check if key present.
+	keyVal, ifPresent := a["notpresent"]
+	fmt.Println(keyVal)
+	fmt.Println(ifPresent)
+
+	keyVal1, ifPresent1 := a["height"]
+	fmt.Println(keyVal1)
+	fmt.Println(ifPresent1)
+
 }
