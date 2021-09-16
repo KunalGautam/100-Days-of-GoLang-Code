@@ -37,4 +37,9 @@ func main() {
 		fmt.Printf("%s -> %d\n", key, val)
 	}
 
+	// Step 8: Print Only keys
+	for k := range b {
+		fmt.Println("key:", k)
+	}
+
 }
