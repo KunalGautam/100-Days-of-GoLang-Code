@@ -9,4 +9,7 @@ func main() {
 	a["height"] = 170
 	fmt.Println(a)
 
+	// Step 2: length of map
+	fmt.Println(len(a))
+
 }
