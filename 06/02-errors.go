@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -11,5 +12,11 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 		fmt.Printf("Type %T", err)
+	}
+
+	// Step 2, real world error example
+	_, err = os.Open("filename.txt")
+	if err != nil {
+		fmt.Println(err)
 	}
 }
