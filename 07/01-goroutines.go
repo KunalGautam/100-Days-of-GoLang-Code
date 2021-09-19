@@ -17,6 +17,12 @@ func main() {
 	go runThis("S2")
 	go runThis("S3")
 
+	//Anonymous function
+	go func(msg string) {
+		fmt.Println("Hello from ", msg)
+	}("S4")
+
+	// As the above subroutines run separately, we need to wait them for finish
 	time.Sleep(time.Second)
 	fmt.Println("done")
 }
