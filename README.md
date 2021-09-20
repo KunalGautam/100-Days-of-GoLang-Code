@@ -2,6 +2,7 @@
 Logging 100 Days of GoLang code.
 
 ## Resources
+- [Learn How to Code: Google's Go (golang) Programming Language](https://www.udemy.com/course/learn-how-to-code/) <- In depth tutorial for golang
 - [Go By Examples](https://gobyexample.com/)
 - [Go Courses by Jon Calhoun](https://courses.calhoun.io)
 
