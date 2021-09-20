@@ -12,10 +12,11 @@ func runThis(capture string) {
 	for i := 0; i < 10; i++ {
 		fmt.Println("Ran from ", capture, ": ", i)
 	}
+	wg.Done()
 }
 
 func main() {
-	runThis("S1")
+	//runThis("S1")
 
 	// Provide number of go routines to wait for
 	wg.Add(3)
@@ -25,9 +26,10 @@ func main() {
 	//Anonymous function
 	go func(msg string) {
 		fmt.Println("Hello from ", msg)
+		wg.Done()
 	}("S4")
 
 	// As the above subroutines run separately, run this when all is done
-	wg.Done()
+	wg.Wait()
 	fmt.Println("done")
 }
