@@ -12,4 +12,10 @@ func main() {
 	sort.Strings(str)
 	fmt.Println(str)
 
+	// Step 2: create slice of ints
+	ints := []int{8, 98, 4, 176, 5}
+	// Sort ints
+	sort.Ints(ints)
+	fmt.Println(ints)
+
 }
