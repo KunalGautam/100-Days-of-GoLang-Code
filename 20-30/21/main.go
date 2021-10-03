@@ -3,6 +3,7 @@ package main
 
 import (
 	"encoding/csv"
+	"flag"
 	"fmt"
 	"os"
 	"strings"
@@ -14,7 +15,10 @@ type quiz struct {
 }
 
 func main() {
-	readCsvFile, err := os.ReadFile("data.csv")
+	csvFilename := flag.String("filename", "data.csv", "Provide filename for data, default is data.csv'")
+	flag.Parse()
+
+	readCsvFile, err := os.ReadFile(*csvFilename)
 	if err != nil {
 		panic(err)
 	}
