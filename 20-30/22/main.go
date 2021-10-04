@@ -40,6 +40,9 @@ func main() {
 
 	score := 0
 
+	fmt.Println("You have ", *timer, " Seconds to complete the quiz. Press the Enter Key to start the quiz.")
+	fmt.Scanln()
+
 	startTimer := time.NewTimer(time.Second * time.Duration(*timer))
 
 	go func() {
