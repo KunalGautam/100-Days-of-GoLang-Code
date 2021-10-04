@@ -39,6 +39,7 @@ func main() {
 	}
 
 	score := 0
+	quizNo := 0
 
 	fmt.Println("You have ", *timer, " Seconds to complete the quiz. Press the Enter Key to start the quiz.")
 	fmt.Scanln()
@@ -47,19 +48,23 @@ func main() {
 
 	go func() {
 		<-startTimer.C
-		fmt.Println("Your Score is ", score)
+		printScore(quizNo, len(csvData), score)
 		os.Exit(0)
 	}()
 
 	for i, q := range quizzes {
 		fmt.Printf("Quiz #%d: %s = \n", i+1, q.ques)
+		quizNo = i + 1
 		var answer string
 		fmt.Scanf("%s\n", &answer)
 		if answer == q.ans {
 			score++
 		}
 	}
+	printScore(quizNo, len(csvData), score)
+}
 
-	fmt.Println("Your Score is ", score)
+func printScore(q, l, s int) {
+	fmt.Printf("Your Score from %d questions out of %d questions is %d \n", q, l, s)
 
 }
