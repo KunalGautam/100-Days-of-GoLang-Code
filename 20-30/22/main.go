@@ -17,7 +17,7 @@ type quiz struct {
 
 func main() {
 	csvFilename := flag.String("filename", "data.csv", "Provide filename for data, default is data.csv'")
-	timer := flag.Int("timer", 10, "Set Time Limit in seconds, default is 30 Seconds")
+	timer := flag.Int("timer", 10, "Set Time Limit in seconds, default is 10 Seconds")
 	flag.Parse()
 
 	readCsvFile, err := os.ReadFile(*csvFilename)
