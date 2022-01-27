@@ -1,5 +1,5 @@
 # 100-Days-of-GoLang-Code
-Logging 100 Days of GoLang code.
+Logging 100 Days of GoLang code. I failed to be regular to it. Hence I accept my failure :) 
 
 ## Resources
 - [Learn How to Code: Google's Go (golang) Programming Language](https://www.udemy.com/course/learn-how-to-code/) <- In depth tutorial for golang
